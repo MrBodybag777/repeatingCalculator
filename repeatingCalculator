@@ -1,9 +1,6 @@
 //C# main
 using System.Reflection.Metadata;
 
-
-
-
 internal class Program
 {
     static void Main(string[] args)
