@@ -1,1 +1,29 @@
 //C# main
+using System.Reflection.Metadata;
+
+
+
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Repeating Calculator || Enter number here:");
+        Console.WriteLine("Enter your first number: ");
+        int x = Convert.ToInt32(Console.ReadLine());
+        
+        while (true){
+            Console.WriteLine("Enter your next number: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("(1).Addition\n(2).Subtraction\n(3).Multiplication\n(4).Division");
+            int userAction = Convert.ToInt32(Console.ReadLine());
+            if (userAction == 1){x += y;}
+            if (userAction == 2){x -= y;}
+            if (userAction == 3){x *= y;}
+            if (userAction == 4){x /= y;}
+
+            Console.WriteLine("Answer: " + x);
+        }
+    }
+}
